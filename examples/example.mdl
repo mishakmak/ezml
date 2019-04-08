@@ -1,0 +1,14 @@
+Preprocess:
+Model:
+(InSequence
+  (Conv 3 11 96)
+  (Conv 96 5 64)
+  (Conv 64 3 192)
+  (Conv 384 3 256)
+  (Conv 256 3 256)
+  (Full 9216 4096)
+  (Full 4096 4096)
+  (Full 4096 17)
+)
+Loss:
+Postprocess:
